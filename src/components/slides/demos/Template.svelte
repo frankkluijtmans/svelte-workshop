@@ -17,5 +17,12 @@
 </script>
 
 <div>
+    {#await promise}
+        <p>Waiting for promise...</p>
+    {:then number}
+        <p>Promise resolved with {number}</p>
+    {:catch error}
+        <p>Promise rejected with {error.message}</p>
+    {/await}
     <button on:click={onClick}>Request a number</button>
 </div>

@@ -13,5 +13,5 @@
 
 <DemoArea>
     { messageFromChild }
-    <Events/>
+    <Events on:custom-event={(e) => messageFromChild = e.detail.message}/>
 </DemoArea>

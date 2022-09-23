@@ -1,3 +1,4 @@
 <div>
-    <slot>Slot fallback</slot>
+    <slot name="one">One</slot>
+    <slot name="two">Two</slot>
 </div>

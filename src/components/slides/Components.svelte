@@ -12,5 +12,7 @@
 </ul>
 
 <DemoArea>
-    <Slots />
+    <Slots>
+        <div slot="two">This is a slut</div>
+    </Slots>
 </DemoArea>

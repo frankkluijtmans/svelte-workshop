@@ -5,5 +5,5 @@
 </script>
 
 <div>
-    <button>Click me!</button>
+    <button on:click={() => dispatch('custom-event', { message: 'Hi Hobo!' })}>Click me!</button>
 </div>

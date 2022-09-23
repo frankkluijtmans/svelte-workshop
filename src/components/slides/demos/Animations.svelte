@@ -1,16 +1,19 @@
 <script lang="ts">
-    import { writable } from 'svelte/store';
-    //import { spring } from 'svelte/motion';
+    //import { writable } from 'svelte/store';
+    import { spring } from 'svelte/motion';
     //import { fade } from 'svelte/transition';
 
-    const offset = writable(0);
+    const offset = spring(0);
     let visible = true;
 
     const animateCircle = () => { offset.set(-100) };
 </script>
 
 <div id="animations-demo-wrapper">
-    <div class="Circle" style="transform: translateX(-{$offset}px);"/>
+    <div class="Circle" style="transform: translateX({$offset}px);"
+        on:mousedown={() => offset.set(-10)}
+        on:mouseup={() => offset.set(0)}
+    />
 </div>
 <button on:click={animateCircle}>Animate</button>
 

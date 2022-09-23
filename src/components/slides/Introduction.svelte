@@ -7,7 +7,7 @@
     <li>Simple and easy to learn</li>
     <li>Works with actual DOM instead of the Virtual DOM</li>
     <li>Less boilerplate than most frameworks</li>
-    <li>Fast AF 💨</li>
+    <li>Fast AF 💨⚡️</li>
 </ul>
 <img 
     src={svelteLogo}

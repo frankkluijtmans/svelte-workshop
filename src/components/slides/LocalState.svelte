@@ -11,5 +11,5 @@
 </ul>
 
 <DemoArea>
-    <LocalState/>
+    <LocalState name="Frank"/>
 </DemoArea>

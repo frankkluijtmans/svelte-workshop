@@ -14,4 +14,5 @@ npm run dev`}/>
     <li>
         Use a component library if you want (e.g. https://sveltematerialui.com/)
     </li>
+    <li>Optional: install <code>node-sass</code> if you'd like to use scss</li>
 </ul>

@@ -7,17 +7,17 @@
 
 <div id="databinding-demo-wrapper">
     <div>
-        <input value={teamName}> Hello {teamName}!
+        <input bind:value={teamName}> Hello {teamName}!
     </div>
     
     <div>
-        <input id="checkbox" type="checkbox">
+        <input id="checkbox" type="checkbox" bind:checked={isChecked}>
         <label for="checkbox">Check me</label>
-        <button>Submit</button>
+        <button disabled={!isChecked}>Submit</button>
     </div>
 
     <div>
-        <DataBindingChild/>
+        <DataBindingChild bind:name={teamName}/>
     </div>
 </div>
 

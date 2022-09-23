@@ -1,6 +1,5 @@
 <script lang="ts">
     import { slideCount, slideIndex } from '../stores';
-    export let title: string = 'Slide Title';
 
     const previous = () => {
         if($slideIndex === 0) return;
@@ -28,6 +27,8 @@
     <button class="Control" on:click={next}>Next</button>
 </nav>
 
+<svelte:window on:keydown={onKeyDown}/>
+
 <style lang="scss">
     #controls {
         position: relative;
@@ -43,5 +44,3 @@
         box-shadow: 0 -4px 16px var(--color-bg-dark);
     }
 </style>
-
-<svelte:window on:keydown={onKeyDown} />
